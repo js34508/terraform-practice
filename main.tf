@@ -34,9 +34,9 @@ module "security-group" {
 
   vcp_id  =  data.was_vcp.default.id
   ingress_rules  =  ["http-80-tcp", "https-443-tcp"]
-  ingress_cidr_block = ["0.0.0.0/0"]
+  ingress_cidr_blocks = ["0.0.0.0/0"]
 
   egress_rules  =  ["all-all"]
-  egress_cidr_block = ["0.0.0.0/0"]
+  egress_cidr_blocks = ["0.0.0.0/0"]
 
 }
