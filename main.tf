@@ -32,7 +32,7 @@ module "security-group" {
   version = "4.16.2"
   name  =  "Jeff-net"
 
-  vcp_id  =  data.was_vcp.default.id
+  vpc_id  =  data.was_vpc.default.id
   ingress_rules  =  ["http-80-tcp", "https-443-tcp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
 
